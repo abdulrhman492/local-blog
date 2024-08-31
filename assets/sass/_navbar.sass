@@ -1,0 +1,27 @@
+
+header
+  position: sticky
+  top: 0
+  width: 100%
+  background: $bg-light
+  color: $text-dark
+  padding: 15px 0
+  .container
+    padding: 0
+    nav
+      @include flex(space-between, center, nowrap, 0)
+      .logo
+        a
+          color: $text-dark
+          font-size: 22px
+          @include flex(center, center, nowrap, 5px)
+      ul
+        @include flex(center, center, nowrap, 15px)
+        li
+          background: $bg-dark
+          color: $bg-light
+          padding: 5px 15px
+          font-size: 18px
+          border-radius: 9999px
+          text-transform: capitalize
+          cursor: pointer

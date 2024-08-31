@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Tarmeez Final Project || Kora Feeds, you can know and read more about football feeds all over the world" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <title>Tarmeez Final Project</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="index.html">موقع أخبار<box-icon name="news"></box-icon></a>
+        </div>
+        <ul class="navigation">
+          <li class="modalBtn" data-target="1">إضافة خبر</li>
+          <li class="modalBtn" data-target="2">إدارة الأخبار</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="modal data-inputs" data-modal="1">
+          <div class="content">
+            <div class="head">
+              <p class="title">إضافة خبر</p>
+              <div class="icon closeModalBtn" data-target="1">
+                <box-icon name="window-close"></box-icon>
+              </div>
+            </div>
+            <div class="body">
+              <div class="input-field">
+                <label for="feedTitle">العنوان:</label>
+                <input required data-type="title" class="add_input" type="text" id="feedTitle" />
+              </div>
+              <div class="input-field">
+                <label for="feedImage">رابط الصورة:</label>
+                <input required data-type="image" class="add_input" type="text" id="feedImage" />
+              </div>
+              <div class="input-field">
+                <label for="feedDesc">الوصف:</label>
+                <input required data-type="description" class="add_input" type="text" id="feedDesc" />
+              </div>
+              <button id="addFeedBtn">
+                إضافة
+                <box-icon name="add-to-queue" color="white"></box-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal data-show" data-modal="2">
+          <div class="content">
+            <div class="head">
+              <p class="title">جميع الأخبار</p>
+              <div class="icon closeModalBtn" data-target="2">
+                <box-icon name="window-close"></box-icon>
+              </div>
+            </div>
+            <div class="body">
+              <ul id="manageFeeds"></ul>
+            </div>
+            <div class="foot">
+              <button id="removeAll">حذف الجميع</button>
+            </div>
+          </div>
+        </div>
+        <div class="feeds_container"></div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/boxicons.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

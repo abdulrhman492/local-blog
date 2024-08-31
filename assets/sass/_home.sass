@@ -1,0 +1,28 @@
+main
+  section
+    .container
+      .feeds_container
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(300px,380px))
+        justify-content: center
+        gap: 20px
+        .feed
+          width: 100%
+          background: $bg-dark
+          padding: 15px
+          border-radius: 10px
+          .image
+            img
+              border-radius: 10px 10px 0 0
+          .content
+            padding-top: 8px
+            border-top: 1px solid $bg-light
+            .name
+              font-size: 20px
+              line-height: 1.4
+              font-weight: 600
+              margin-bottom: 8px
+            .description
+              font-size: 14px
+              color: $bg-light
+              line-height: 1.4
